@@ -10,7 +10,7 @@ for (character of marvel.characters){
 console.log(spdfText);
 
 let makePDF = new PDFDocument;
-makePDF.pipe(fs.createWriteStream('characters.pdf'))
+makePDF.pipe(fs.createWriteStream('src/characters.pdf'))
 makePDF.font('Times-Roman')
     .fontSize(25)
     .text(spdfText, 50, 50);
